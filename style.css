@@ -1,4 +1,10 @@
-body{
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
     background-image: url(picts/Luca_HBD_Landscapes.png);
@@ -6,34 +12,38 @@ body{
     background-position: fixed;
     background-color: #2f3640;
     background-attachment: fixed;
+
+    height: 100vh;
 }
 
-.background_overlay{
+.background_overlay {
     position: fixed;
-    width: device-width; 
-    height: device-width;
+    width: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.63);
-    }
+}
 
-.parent{
+.parent {
     width: 100%;
     position: absolute;
     display: flex;
     height: 100vh;
     justify-content: center;
 }
-.content_profile{
+
+.content_profile {
     width: 90%;
     height: auto;
     position: relative;
     top: 10px;
     bottom: 10px;
 }
-.menu{
+
+.menu {
     background-color: transparent;
     backdrop-filter: blur(10px);
     width: 60%;
@@ -43,22 +53,25 @@ body{
     justify-content: center;
     margin: auto;
 }
-.profile_menu{
+
+.profile_menu {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     justify-content: center;
 }
-.profile_overlay{
+
+.profile_overlay {
     position: absolute;
     width: 151px;
     height: 151px;
     border-radius: 50%;
     background-color: #105bc4;
     opacity: 50%;
-    
+
 }
-.profile_row{
+
+.profile_row {
     position: relative;
     width: 100%;
     height: auto;
@@ -66,21 +79,24 @@ body{
     display: grid;
     justify-content: center;
 }
-img[alt=avatar]{
+
+img[alt=avatar] {
     width: 95%;
     border-radius: 50%;
     transition-duration: 0.3s;
     cursor: pointer;
 }
-img[alt=avatar]:hover{
+
+img[alt=avatar]:hover {
     border-radius: 45%;
 }
-.name_profile{
+
+.name_profile {
     font-size: 25px;
     margin: auto;
 }
 
-.information{
+.information {
     backdrop-filter: blur(10px);
     width: 61%;
     border-radius: 20px;
@@ -90,13 +106,15 @@ img[alt=avatar]:hover{
     top: 10px;
     margin: auto;
 }
-.close_box{
+
+.close_box {
     border-color: aliceblue;
     position: relative;
     margin: auto;
     justify-content: center;
 }
-.profile_information{
+
+.profile_information {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
